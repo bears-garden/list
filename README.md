@@ -1,32 +1,27 @@
-# @bears-garden/double-node
-node with next and previous
+# @bears-garden/list
+linked list implementation
 
 # Usage
-`var Node = require("@bears-garden/double-node");`  
+`import List from "@bears-garden/list";`  
 
 
 ### insert
-@returns new node
+@returns inserted node
 
-`var list = Node.insert(null,1);`    
-`list = Node.insert(list,2);`  
+`const node = List.insert(1);`    
+`const node2 = List.insert(2);`  
 
 ### append
 @returns new node  
 
-`var node = Node.append(list,2);`  
+`var node = Node.append(2);`  
 
 ### find
 @returns the node
 
-`var n = Node.find(list, 1);`  
-
-### predecessor
-@returns node prior to 1
-
-`var p = Node.predecessor(list,1);`  
+`var n = Node.find(1);`  
 
 ### remove
 @returns the list
 
-`list = Node.remove(list,2);`
+`list = Node.remove(2);`
